@@ -25,6 +25,7 @@ class SaladMenuViewController: UIViewController {
         cv.backgroundColor = .clear
         cv.translatesAutoresizingMaskIntoConstraints = false
         cv.showsHorizontalScrollIndicator = false
+        cv.clipsToBounds = false
         return cv
     }()
     private let sortLabel = MakerView().makerLabel(text: "Sort by")
