@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SimpleCollectionViewCell: UICollectionViewCell {
+class VerticalCollectionViewCell: UICollectionViewCell {
     
     private let logoImage = MakerView().makerImage(addSub: true,addBottomSub: true)
     private let saveButton = MakerView().makerButton(image: UIImage(systemName: "heart")?.withRenderingMode(.alwaysTemplate), image2: UIImage(systemName: "heart.fill")?.withRenderingMode(.alwaysTemplate), cornerRadius: 9)

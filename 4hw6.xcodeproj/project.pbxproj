@@ -16,8 +16,10 @@
 		72908D5D2B90CC650017D1D5 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72908D5C2B90CC650017D1D5 /* Color.swift */; };
 		72908D612B90CC7C0017D1D5 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72908D602B90CC7C0017D1D5 /* Font.swift */; };
 		72908D642B90F5430017D1D5 /* Urbanist-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 72908D632B90F5430017D1D5 /* Urbanist-Medium.ttf */; };
-		72908D682B918C400017D1D5 /* SimpleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72908D672B918C400017D1D5 /* SimpleCollectionViewCell.swift */; };
+		72908D682B918C400017D1D5 /* VerticalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72908D672B918C400017D1D5 /* VerticalCollectionViewCell.swift */; };
 		72908D6D2B9197B40017D1D5 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72908D6C2B9197B40017D1D5 /* Model.swift */; };
+		72908D702B91C2B10017D1D5 /* HorizontalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72908D6F2B91C2B10017D1D5 /* HorizontalCollectionViewCell.swift */; };
+		72908D722B91C4480017D1D5 /* ModelForHorizontal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72908D712B91C4480017D1D5 /* ModelForHorizontal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +37,10 @@
 		72908D632B90F5430017D1D5 /* Urbanist-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Urbanist-Medium.ttf"; path = "../../../../resources/fonts/Urbanist/static/Urbanist-Medium.ttf"; sourceTree = "<group>"; };
 		72908D652B90F5530017D1D5 /* Urbanist-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Urbanist-SemiBold.ttf"; path = "../../../../resources/fonts/Urbanist/static/Urbanist-SemiBold.ttf"; sourceTree = "<group>"; };
 		72908D662B90F5530017D1D5 /* Urbanist-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Urbanist-Regular.ttf"; path = "../../../../resources/fonts/Urbanist/static/Urbanist-Regular.ttf"; sourceTree = "<group>"; };
-		72908D672B918C400017D1D5 /* SimpleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionViewCell.swift; sourceTree = "<group>"; };
+		72908D672B918C400017D1D5 /* VerticalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalCollectionViewCell.swift; sourceTree = "<group>"; };
 		72908D6C2B9197B40017D1D5 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		72908D6F2B91C2B10017D1D5 /* HorizontalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCollectionViewCell.swift; sourceTree = "<group>"; };
+		72908D712B91C4480017D1D5 /* ModelForHorizontal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelForHorizontal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +135,8 @@
 		72908D692B91911E0017D1D5 /* CollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
-				72908D672B918C400017D1D5 /* SimpleCollectionViewCell.swift */,
+				72908D6F2B91C2B10017D1D5 /* HorizontalCollectionViewCell.swift */,
+				72908D672B918C400017D1D5 /* VerticalCollectionViewCell.swift */,
 			);
 			path = CollectionViewCell;
 			sourceTree = "<group>";
@@ -140,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				72908D6C2B9197B40017D1D5 /* Model.swift */,
+				72908D712B91C4480017D1D5 /* ModelForHorizontal.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -224,12 +230,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				72908D482B90CB790017D1D5 /* SaladMenuViewController.swift in Sources */,
+				72908D722B91C4480017D1D5 /* ModelForHorizontal.swift in Sources */,
+				72908D702B91C2B10017D1D5 /* HorizontalCollectionViewCell.swift in Sources */,
 				72908D592B90CC380017D1D5 /* MakerView.swift in Sources */,
 				72908D612B90CC7C0017D1D5 /* Font.swift in Sources */,
 				72908D442B90CB790017D1D5 /* AppDelegate.swift in Sources */,
 				72908D5D2B90CC650017D1D5 /* Color.swift in Sources */,
 				72908D462B90CB790017D1D5 /* SceneDelegate.swift in Sources */,
-				72908D682B918C400017D1D5 /* SimpleCollectionViewCell.swift in Sources */,
+				72908D682B918C400017D1D5 /* VerticalCollectionViewCell.swift in Sources */,
 				72908D6D2B9197B40017D1D5 /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
