@@ -1,0 +1,15 @@
+{
+  "images" : [
+    {
+      "filename" : "tossed-salad-for-a-crowd-with-parmesan.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
+  }
+}
