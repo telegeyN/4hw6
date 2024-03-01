@@ -48,7 +48,7 @@ class SaladMenuViewController: UIViewController {
         view.addSubview(saladLabel)
         NSLayoutConstraint.activate([
             saladLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor,constant: 0),
-            saladLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,constant: 13)
+            saladLabel.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor,constant: 18)
         ])
         
         searchButton.tintColor = UIColor.black
@@ -80,8 +80,6 @@ class SaladMenuViewController: UIViewController {
             quantityLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor,constant: 4),
             quantityLabel.leadingAnchor.constraint(equalTo: saladImage.leadingAnchor,constant: 8)
         ])
-        
-        
         
         view.addSubview(sortLabel)
         NSLayoutConstraint.activate([
@@ -119,14 +117,14 @@ class SaladMenuViewController: UIViewController {
     
     private func updateDetails(){
         
-        items  = [Item(logo: "salad1", name: "Elevated Greek salad bowl", icon: "icon1", person: "Willard Purnell"),
-                  Item(logo: "salad2", name: "Pear salad", icon: "icon2", person: "Jane Cooper"),
-                  Item(logo: "salad3", name: "Italian Chopped Salad", icon: "icon3", person: "Elle Kai"),
-                  Item(logo: "salad4", name: "Arugula Salad with Lemon Vinaigrette", icon: "icon4", person: "Zion Reynolds"),
-                  Item(logo: "salad5", name: "Homemade Caesar Salad", icon: "icon5", person: "Kate Rey"),
-                  Item(logo: "salad6", name: "Bright Spring Salad", icon: "icon6", person: "Will Gosling"),
-                  Item(logo: "salad7", name: "Healthy Taco Salad", icon: "icon7", person: "Tom Godly"),
-                  Item(logo: "salad8", name: "Tortellini Salad", icon: "icon8", person: "Emma Stawn"),
+        items  = [Item(logo: UIImage(named: "salad1"), name: "Elevated Greek salad bowl", icon: UIImage(named:"icon1"), person: "Willard Purnell"),
+                  Item(logo: UIImage(named: "salad2"), name: "Pear salad", icon: UIImage(named: "icon2"), person: "Jane Cooper"),
+                  Item(logo: UIImage(named: "salad3"), name: "Italian Chopped Salad", icon: UIImage(named: "icon3"), person: "Elle Kai"),
+                  Item(logo: UIImage(named: "salad4"), name: "Arugula Salad with Lemon Vinaigrette", icon: UIImage(named: "icon4"), person: "Zion Reynolds"),
+                  Item(logo: UIImage(named: "salad5"), name: "Homemade Caesar Salad", icon: UIImage(named: "icon5"), person: "Kate Rey"),
+                  Item(logo: UIImage(named: "salad6"), name: "Bright Spring Salad", icon: UIImage(named: "icon6"), person: "Will Gosling"),
+                  Item(logo: UIImage(named: "salad7"), name: "Healthy Taco Salad", icon: UIImage(named: "icon7"), person: "Tom Godly"),
+                  Item(logo: UIImage(named: "salad8"), name: "Tortellini Salad", icon: UIImage(named: "icon8"), person: "Emma Stawn")
         ]
     }
 }
@@ -140,8 +138,7 @@ extension SaladMenuViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! SimpleCollectionViewCell
         
-        let item = items[indexPath.row]
-        cell.setData(logo: item.logo, name: item.name, icon: item.icon, person: item.person)
+        cell.setData(items: items[indexPath.row])
         
         return cell
     }
